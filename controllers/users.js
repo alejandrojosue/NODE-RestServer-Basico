@@ -18,6 +18,7 @@ const usersGet = async(req = request, res = response) => {
         usersCount,
         users
     });
+
 }
 
 const usersPut = async(req, res = response) => {
