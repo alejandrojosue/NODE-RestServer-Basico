@@ -57,7 +57,6 @@ const usersPost = async(req, res = response) => {
 
 const usersDelete = async(req, res = response) => {
     const { id } = req.params;
-
     // borrar registro
     // const user = await User.findByIdAndDelete(id);
     const user = await User.findByIdAndUpdate(id, { estado: false });
