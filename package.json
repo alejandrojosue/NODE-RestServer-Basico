@@ -4,8 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node app"
+        "start": "node app",
+        "test": "node ./test/test.js",
+        "swagger": "node ./helpers/swagger-generator.js"
     },
     "keywords": [],
     "author": "",
@@ -17,5 +18,14 @@
         "express": "^4.18.1",
         "express-validator": "^6.14.2",
         "mongoose": "^6.4.6"
+    },
+    "devDependencies": {
+        "nodemon": "^3.0.3",
+        "standard": "17.1.0",
+        "swagger-autogen": "^2.23.7",
+        "swagger-ui-express": "^5.0.0"
+    },
+    "eslintConfig": {
+        "extends": "./node_modules/standard/eslintrc.json"
     }
 }
